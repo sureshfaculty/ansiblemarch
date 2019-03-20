@@ -1,0 +1,3 @@
+---
+- hosts: webserver
+  remote_user: suresh
