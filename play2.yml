@@ -1,0 +1,4 @@
+---
+pkg1: httpd
+pkg2: lynx
+pkg3: curl
