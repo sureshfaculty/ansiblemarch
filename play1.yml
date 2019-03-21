@@ -1,3 +1,5 @@
 ---
 - hosts: webserver
   remote_user: suresh
+  tasks:
+    - name: install httpd package
