@@ -5,3 +5,6 @@
     - name: install httpd package
       yum: name=httpd state=present
     - name: create index.html
+      copy: src=index.html dest=/var/www/html
+    - name: service httpd start
+      service: name=httpd state=started

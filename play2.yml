@@ -2,3 +2,5 @@
 pkg1: httpd
 pkg2: lynx
 pkg3: curl
+pkg3: debian
+pkg4: redhat
