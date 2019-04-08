@@ -1,0 +1,20 @@
+---
+- hosts: webserver
+  tasks:
+  - name: Ansible round filter example - output 30
+    debug:
+      msg: "{{ 29.7 | round}}"
+
+  - name: Ansible round number with precision specified example - output 29.1 
+    debug: 
+      msg: "{{ 29.094 | round(1,'common')}}"
+
+  - name: Floor round operation with precision example - output 29.0 
+    debug: 
+      msg: "{{ 29.094 | round(1,'floor')}}"
+
+  - name: Ceil round operation with precision specified example - output 29.1 
+    debug: 
+      msg: "{{ 29.094 | round(1,'ceil')}}"
+
+

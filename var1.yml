@@ -1,0 +1,13 @@
+---
+- hosts: webserver
+  tasks:
+  - shell: cat /home/suresh/dev/file2
+    register: output
+  - name: Ansible when variable is empty example
+    debug:
+      msg: "empty"
+    when: output.stdout == ""
+
+
+
+
