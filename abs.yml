@@ -1,0 +1,9 @@
+---
+- hosts: webserver
+  vars:
+    number: -5.5
+  tasks:
+    - name: Ansible abs math filter example
+      debug:
+        var: (number * 7) |abs
+
